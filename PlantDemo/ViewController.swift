@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet var bulletCountLabel: UILabel!
     @IBOutlet var currentMissleImageView: UIImageView!
-    @IBOutlet var planeImageView: UIImageView!
+    @IBOutlet var planeImageView: PlaneImageView!
 
     var bullet = Bullet() {
         didSet {
@@ -24,13 +24,6 @@ class ViewController: UIViewController {
         didSet {
             self.bulletCountLabel.text = "\(bulletCount)"
         }
-    }
-}
-
-//MARK: - life cycle
-extension ViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 }
 
