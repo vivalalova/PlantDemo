@@ -26,18 +26,11 @@ class PlaneImageView: UIImageView {
     }
 
     func pan(gesture: UIGestureRecognizer) {
+        
         guard let superview = self.superview else {
             return
         }
 
         self.center = gesture.location(in: superview)
-
-        if gesture.state == .began {
-
-        } else if gesture.state == .changed {
-
-        } else if gesture.state == .ended {
-
-        }
     }
 }

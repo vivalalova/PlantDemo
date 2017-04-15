@@ -16,7 +16,6 @@ class ViewController: UIViewController {
 
 //MARK: - IBActions
 extension ViewController {
-
     @IBAction func fireBtnPressed(_ sender: UIButton) {
         self.planeImageView.plane.fire { self.bulletCountLabel.text = "\($0)" }
     }

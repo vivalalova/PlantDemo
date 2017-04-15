@@ -24,10 +24,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5yO-0K-GF6">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="5b1-re-2aG" customClass="PlaneImageView" customModule="PlantDemo" customModuleProvider="target">
-                                <rect key="frame" x="147" y="431" width="80" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bullet Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWf-y4-P62">
                                 <rect key="frame" x="16" y="44" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -56,7 +52,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="changeBulletBtnPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSJ-jB-iTU"/>
+                                    <action selector="changeBulletBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CF6-dd-fNJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHy-fO-cLB" customClass="BulletBtn" customModule="PlantDemo" customModuleProvider="target">
@@ -72,18 +68,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="changeBulletBtnPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="PlQ-kv-HUb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wg-YO-zSf">
-                                <rect key="frame" x="143" y="559" width="88" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="25w-p3-uTw"/>
-                                    <constraint firstAttribute="width" constant="88" id="H6w-eN-Mka"/>
-                                </constraints>
-                                <state key="normal" image="fire"/>
-                                <connections>
-                                    <action selector="fireBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yn-HP-2Pf"/>
+                                    <action selector="changeBulletBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMP-wh-Xfu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR0-on-g0J" customClass="BulletBtn" customModule="PlantDemo" customModuleProvider="target">
@@ -99,9 +84,24 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="changeBulletBtnPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTZ-2G-Fva"/>
+                                    <action selector="changeBulletBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K4f-1T-GTz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wg-YO-zSf">
+                                <rect key="frame" x="143" y="559" width="88" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="25w-p3-uTw"/>
+                                    <constraint firstAttribute="width" constant="88" id="H6w-eN-Mka"/>
+                                </constraints>
+                                <state key="normal" image="fire"/>
+                                <connections>
+                                    <action selector="fireBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yn-HP-2Pf"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="5b1-re-2aG" customClass="PlaneImageView" customModule="PlantDemo" customModuleProvider="target">
+                                <rect key="frame" x="147" y="431" width="80" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

@@ -12,15 +12,11 @@ import UIKit
 class BulletBtn: UIButton {
     @IBInspectable var type: Int = 1
 
-    lazy var bullet: Bullet = {
-        let b = Bullet(type: .davincci)
-        return b
-    }()
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    var bullet: Bullet {
         if let type = BulletType(rawValue: type) {
-            self.bullet.type = type
+            return Bullet(type: type)
         }
+
+        return Bullet(type: .davincci)
     }
 }

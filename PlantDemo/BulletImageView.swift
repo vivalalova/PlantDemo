@@ -26,7 +26,7 @@ class BulletImageView: UIImageView {
                 self.removeFromSuperview()
                 return
             }
-            self.center.y -= 1
+            self.center.y -= 2
         }.fire()
     }
 }

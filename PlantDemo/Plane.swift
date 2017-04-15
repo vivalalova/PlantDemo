@@ -23,6 +23,7 @@ class Plane {
         guard let view = self.view else {
             return
         }
+
         guard self.bulletCount >= self.bullet.cost else {
             return
         }
