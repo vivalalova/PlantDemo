@@ -12,6 +12,8 @@ class PlaneImageView: UIImageView {
 
     var point = CGPoint(x: 0, y: 0)
 
+    lazy var plane = Plane()
+
     override func awakeFromNib() {
         super.awakeFromNib()
 

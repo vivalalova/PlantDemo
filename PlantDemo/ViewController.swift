@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var currentMissleImageView: UIImageView!
     @IBOutlet var planeImageView: PlaneImageView!
 
+    var plane = Plane()
+
     var bullet = Bullet() {
         didSet {
             self.currentMissleImageView.image = bullet.image
@@ -31,13 +33,15 @@ class ViewController: UIViewController {
 extension ViewController {
 
     @IBAction func fireBtnPressed(_ sender: UIButton) {
-        guard self.bulletCount >= self.bullet.cost else {
+        guard self.plane.bulletCount >= self.bullet.cost else {
             return
         }
 
         self.bulletCount -= self.bullet.cost
 
         self.fireBullet()
+
+        self.plane.fire()
     }
 
     @IBAction func missleBtnPressed(_ sender: BulletBtn) {

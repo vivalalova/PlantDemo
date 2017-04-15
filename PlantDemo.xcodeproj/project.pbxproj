@@ -15,7 +15,6 @@
 		9E022B4B1EA1FBFD00E7185B /* PlantDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E022B4A1EA1FBFD00E7185B /* PlantDemoTests.swift */; };
 		9E022B561EA1FBFD00E7185B /* PlantDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E022B551EA1FBFD00E7185B /* PlantDemoUITests.swift */; };
 		9E022B641EA2019700E7185B /* BulletImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E022B631EA2019700E7185B /* BulletImageView.swift */; };
-		9E76D63A1EA20E7300EF87FD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76D6391EA20E7300EF87FD /* Enums.swift */; };
 		9E76D63C1EA20F0C00EF87FD /* BulletBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76D63B1EA20F0C00EF87FD /* BulletBtn.swift */; };
 		9E76D63E1EA20FD500EF87FD /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76D63D1EA20FD500EF87FD /* Bullet.swift */; };
 		9E76D6401EA221EC00EF87FD /* PlaneImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76D63F1EA221EC00EF87FD /* PlaneImageView.swift */; };
@@ -53,7 +52,6 @@
 		9E022B551EA1FBFD00E7185B /* PlantDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDemoUITests.swift; sourceTree = "<group>"; };
 		9E022B571EA1FBFD00E7185B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E022B631EA2019700E7185B /* BulletImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletImageView.swift; sourceTree = "<group>"; };
-		9E76D6391EA20E7300EF87FD /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		9E76D63B1EA20F0C00EF87FD /* BulletBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletBtn.swift; sourceTree = "<group>"; };
 		9E76D63D1EA20FD500EF87FD /* Bullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 		9E76D63F1EA221EC00EF87FD /* PlaneImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneImageView.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				9E022B351EA1FBFD00E7185B /* AppDelegate.swift */,
-				9E76D6391EA20E7300EF87FD /* Enums.swift */,
 				9E022B391EA1FBFD00E7185B /* Main.storyboard */,
 				9E76D6361EA20B5200EF87FD /* models */,
 				9E76D6371EA20B5B00EF87FD /* controllers */,
@@ -305,7 +302,6 @@
 				9E022B381EA1FBFD00E7185B /* ViewController.swift in Sources */,
 				9E76D6401EA221EC00EF87FD /* PlaneImageView.swift in Sources */,
 				9E022B361EA1FBFD00E7185B /* AppDelegate.swift in Sources */,
-				9E76D63A1EA20E7300EF87FD /* Enums.swift in Sources */,
 				9E76D63C1EA20F0C00EF87FD /* BulletBtn.swift in Sources */,
 				9E76D63E1EA20FD500EF87FD /* Bullet.swift in Sources */,
 			);
