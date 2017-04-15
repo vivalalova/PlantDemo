@@ -9,17 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    @IBOutlet var bulletCountLabel: UILabel!
+    @IBOutlet var currentMissleImageView: UIImageView!
+    @IBOutlet var planeImageView: PlaneImageView!
 }
 
+//MARK: - IBActions
+extension ViewController {
+    @IBAction func fireBtnPressed(_ sender: UIButton) {
+        self.planeImageView.plane.fire { self.bulletCountLabel.text = "\($0)" }
+    }
+
+    @IBAction func changeBulletBtnPressed(_ sender: BulletBtn) {
+        self.planeImageView.plane.bullet = sender.bullet
+        self.currentMissleImageView.image = sender.bullet.image
+    }
+}
