@@ -8,20 +8,20 @@
 
 import UIKit
 
-enum BulletType:Int {
+enum BulletType: Int {
     case davincci = 1
     case bacon = 2
     case newton = 3
 }
 
 struct Bullet {
-    var type:BulletType = .davincci
+    var type: BulletType = .davincci
 
-    var cost:Int {
+    var cost: Int {
         return self.type.rawValue
     }
 
-    var image:UIImage {
+    var image: UIImage {
         switch self.type {
         case .davincci:
             return #imageLiteral(resourceName: "missile1")

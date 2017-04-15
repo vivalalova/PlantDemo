@@ -9,9 +9,23 @@
 import UIKit
 
 class BulletImageView: UIImageView {
-    convenience init(bullet:Bullet) {
-        self.init()
+    var timer = Timer()
 
+    convenience init(bullet: Bullet) {
+        self.init()
         self.image = bullet.image
+        self.frame.size = CGSize(width: 20, height: 40)
+        self.contentMode = .scaleAspectFit
+    }
+
+    func startMove() {
+        Timer.scheduledTimer(withTimeInterval: 0.016, repeats: true) { (timer) in
+            guard self.center.y > 0 else {
+                timer.invalidate()
+                self.removeFromSuperview()
+                return
+            }
+            self.center.y -= 1
+        }.fire()
     }
 }

@@ -14,9 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet var currentMissleImageView: UIImageView!
     @IBOutlet var planeImageView: UIImageView!
 
-    var bullet = Bullet()
+    var bullet = Bullet() {
+        didSet {
+            self.currentMissleImageView.image = bullet.image
+        }
+    }
 
-    var bulletCount:Int = 100 {
+    var bulletCount: Int = 100 {
         didSet {
             self.bulletCountLabel.text = "\(bulletCount)"
         }
@@ -34,7 +38,7 @@ extension ViewController {
 extension ViewController {
 
     @IBAction func fireBtnPressed(_ sender: UIButton) {
-        guard self.bulletCount > self.bullet.cost else {
+        guard self.bulletCount >= self.bullet.cost else {
             return
         }
 
@@ -44,15 +48,15 @@ extension ViewController {
     }
 
     @IBAction func missleBtnPressed(_ sender: BulletBtn) {
-        if let type =  BulletType(rawValue: sender.type) {
-            self.bullet.type = type
-        }
+        self.bullet = sender.bullet
     }
 }
 
-
 extension ViewController {
     func fireBullet() {
-
+        let image = BulletImageView(bullet: self.bullet)
+        image.center = self.planeImageView.center
+        self.view.addSubview(image)
+        image.startMove()
     }
 }
