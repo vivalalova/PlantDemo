@@ -10,16 +10,49 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet var bulletCountLabel: UILabel!
+    @IBOutlet var currentMissleImageView: UIImageView!
+    @IBOutlet var planeImageView: UIImageView!
+
+    var bullet = Bullet()
+
+    var bulletCount:Int = 100 {
+        didSet {
+            self.bulletCountLabel.text = "\(bulletCount)"
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
+//MARK: - life cycle
+extension ViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
+
+//MARK: - IBActions
+extension ViewController {
+
+    @IBAction func fireBtnPressed(_ sender: UIButton) {
+        guard self.bulletCount > self.bullet.cost else {
+            return
+        }
+
+        self.bulletCount -= self.bullet.cost
+
+        self.fireBullet()
+    }
+
+    @IBAction func missleBtnPressed(_ sender: BulletBtn) {
+        if let type =  BulletType(rawValue: sender.type) {
+            self.bullet.type = type
+        }
+    }
+}
+
+
+extension ViewController {
+    func fireBullet() {
+
+    }
+}

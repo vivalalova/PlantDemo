@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  BulletBtn.swift
 //  PlantDemo
 //
 //  Created by lova on 2017/4/15.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
+@IBDesignable
+class BulletBtn: UIButton {
+    @IBInspectable var type:Int!
 }
-
