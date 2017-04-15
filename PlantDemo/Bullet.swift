@@ -32,6 +32,8 @@ struct Bullet {
         }
     }
 
-    
+    func view(position: CGPoint) -> BulletImageView {
+        return BulletImageView(bullet: self, center: position)
+    }
 }
 

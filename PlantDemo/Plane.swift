@@ -30,9 +30,9 @@ class Plane {
 
         self.bulletCount -= self.bullet.cost
 
-        let imageView = BulletImageView(bullet: self.bullet, center: view.center)
-        view.superview?.addSubview(imageView)
-        imageView.startMove()
+        let bulletImageView = self.bullet.view(position: view.center)
+        view.superview?.addSubview(bulletImageView)
+        bulletImageView.move()
 
         if complete != nil {
             complete?(self.bulletCount)

@@ -9,8 +9,6 @@
 import UIKit
 
 class BulletImageView: UIImageView {
-    var timer = Timer()
-
     convenience init(bullet: Bullet,center:CGPoint) {
         self.init()
         self.image = bullet.image
@@ -19,7 +17,7 @@ class BulletImageView: UIImageView {
         self.contentMode = .scaleAspectFit
     }
 
-    func startMove() {
+    func move() {
         Timer.scheduledTimer(withTimeInterval: 0.016, repeats: true) { (timer) in
             guard self.center.y > 0 else {
                 timer.invalidate()
