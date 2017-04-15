@@ -18,6 +18,7 @@
 		9E76D63C1EA20F0C00EF87FD /* BulletBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76D63B1EA20F0C00EF87FD /* BulletBtn.swift */; };
 		9E76D63E1EA20FD500EF87FD /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76D63D1EA20FD500EF87FD /* Bullet.swift */; };
 		9E76D6401EA221EC00EF87FD /* PlaneImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76D63F1EA221EC00EF87FD /* PlaneImageView.swift */; };
+		9E76D6421EA2551500EF87FD /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76D6411EA2551500EF87FD /* Plane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		9E76D63B1EA20F0C00EF87FD /* BulletBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletBtn.swift; sourceTree = "<group>"; };
 		9E76D63D1EA20FD500EF87FD /* Bullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 		9E76D63F1EA221EC00EF87FD /* PlaneImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneImageView.swift; sourceTree = "<group>"; };
+		9E76D6411EA2551500EF87FD /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,8 @@
 			children = (
 				9E022B351EA1FBFD00E7185B /* AppDelegate.swift */,
 				9E022B391EA1FBFD00E7185B /* Main.storyboard */,
-				9E76D6361EA20B5200EF87FD /* models */,
 				9E76D6371EA20B5B00EF87FD /* controllers */,
+				9E76D6361EA20B5200EF87FD /* view-models */,
 				9E76D6381EA20B5F00EF87FD /* views */,
 				9E022B3C1EA1FBFD00E7185B /* Assets.xcassets */,
 				9E022B3E1EA1FBFD00E7185B /* LaunchScreen.storyboard */,
@@ -135,12 +137,13 @@
 			path = PlantDemoUITests;
 			sourceTree = "<group>";
 		};
-		9E76D6361EA20B5200EF87FD /* models */ = {
+		9E76D6361EA20B5200EF87FD /* view-models */ = {
 			isa = PBXGroup;
 			children = (
+				9E76D6411EA2551500EF87FD /* Plane.swift */,
 				9E76D63D1EA20FD500EF87FD /* Bullet.swift */,
 			);
-			name = models;
+			name = "view-models";
 			sourceTree = "<group>";
 		};
 		9E76D6371EA20B5B00EF87FD /* controllers */ = {
@@ -304,6 +307,7 @@
 				9E022B361EA1FBFD00E7185B /* AppDelegate.swift in Sources */,
 				9E76D63C1EA20F0C00EF87FD /* BulletBtn.swift in Sources */,
 				9E76D63E1EA20FD500EF87FD /* Bullet.swift in Sources */,
+				9E76D6421EA2551500EF87FD /* Plane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -56,7 +56,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="missleBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSJ-jB-iTU"/>
+                                    <action selector="changeBulletBtnPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSJ-jB-iTU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHy-fO-cLB" customClass="BulletBtn" customModule="PlantDemo" customModuleProvider="target">
@@ -72,7 +72,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="missleBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PlQ-kv-HUb"/>
+                                    <action selector="changeBulletBtnPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="PlQ-kv-HUb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wg-YO-zSf">
@@ -99,7 +99,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="missleBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTZ-2G-Fva"/>
+                                    <action selector="changeBulletBtnPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTZ-2G-Fva"/>
                                 </connections>
                             </button>
                         </subviews>

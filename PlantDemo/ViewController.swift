@@ -9,51 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet var bulletCountLabel: UILabel!
     @IBOutlet var currentMissleImageView: UIImageView!
     @IBOutlet var planeImageView: PlaneImageView!
-
-    var plane = Plane()
-
-    var bullet = Bullet() {
-        didSet {
-            self.currentMissleImageView.image = bullet.image
-        }
-    }
-
-    var bulletCount: Int = 100 {
-        didSet {
-            self.bulletCountLabel.text = "\(bulletCount)"
-        }
-    }
 }
 
 //MARK: - IBActions
 extension ViewController {
 
     @IBAction func fireBtnPressed(_ sender: UIButton) {
-        guard self.plane.bulletCount >= self.bullet.cost else {
-            return
-        }
-
-        self.bulletCount -= self.bullet.cost
-
-        self.fireBullet()
-
-        self.plane.fire()
+        self.planeImageView.plane.fire { self.bulletCountLabel.text = "\($0)" }
     }
 
-    @IBAction func missleBtnPressed(_ sender: BulletBtn) {
-        self.bullet = sender.bullet
-    }
-}
-
-extension ViewController {
-    func fireBullet() {
-        let image = BulletImageView(bullet: self.bullet)
-        image.center = self.planeImageView.center
-        self.view.addSubview(image)
-        image.startMove()
+    @IBAction func changeBulletBtnPressed(_ sender: BulletBtn) {
+        self.planeImageView.plane.bullet = sender.bullet
+        self.currentMissleImageView.image = sender.bullet.image
     }
 }

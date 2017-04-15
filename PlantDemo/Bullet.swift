@@ -8,11 +8,6 @@
 
 import UIKit
 
-enum CC {
-    case a(cost: Int)
-    case b
-}
-
 enum BulletType: Int {
     case davincci = 1
     case bacon = 2
@@ -38,28 +33,3 @@ struct Bullet {
     }
 }
 
-enum PlaceErr: Error {
-    case noBullet
-}
-
-protocol PlaneDelegate {
-    func planeDidFire(plane: Plane, bulletCount: Int, error: PlaceErr?)
-}
-
-struct Plane {
-    var delegate: PlaneDelegate?
-
-    var bullet = Bullet(type: .davincci)
-    var bulletCount: Int = 100
-
-    func fire() {
-        guard self.bulletCount >= self.bullet.cost else {
-            self.delegate?.planeDidFire(plane: self, bulletCount: self.bulletCount, error: PlaceErr.noBullet)
-            return
-        }
-
-
-
-        self.delegate?.planeDidFire(plane: self, bulletCount: self.bulletCount, error: nil)
-    }
-}

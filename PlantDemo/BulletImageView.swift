@@ -11,10 +11,11 @@ import UIKit
 class BulletImageView: UIImageView {
     var timer = Timer()
 
-    convenience init(bullet: Bullet) {
+    convenience init(bullet: Bullet,center:CGPoint) {
         self.init()
         self.image = bullet.image
         self.frame.size = CGSize(width: 20, height: 40)
+        self.center = center
         self.contentMode = .scaleAspectFit
     }
 

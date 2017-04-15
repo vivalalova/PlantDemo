@@ -12,7 +12,7 @@ class PlaneImageView: UIImageView {
 
     var point = CGPoint(x: 0, y: 0)
 
-    lazy var plane = Plane()
+    var plane = Plane()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +21,8 @@ class PlaneImageView: UIImageView {
 
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(pan(gesture:)))
         self.addGestureRecognizer(gesture)
+
+        self.plane.view = self
     }
 
     func pan(gesture: UIGestureRecognizer) {
