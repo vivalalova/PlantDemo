@@ -109,8 +109,8 @@
 			children = (
 				9E022B351EA1FBFD00E7185B /* AppDelegate.swift */,
 				9E022B391EA1FBFD00E7185B /* Main.storyboard */,
-				9E022B371EA1FBFD00E7185B /* ViewController.swift */,
-				9E76D63B1EA20F0C00EF87FD /* BulletBtn.swift */,
+				9E416DFF1EA3BF3D00E6B99D /* Controllers */,
+				9E416E001EA3BF4600E6B99D /* Views */,
 				9E76D6361EA20B5200EF87FD /* Plane */,
 				9E022B3C1EA1FBFD00E7185B /* Assets.xcassets */,
 				9E022B3E1EA1FBFD00E7185B /* LaunchScreen.storyboard */,
@@ -135,6 +135,22 @@
 				9E022B571EA1FBFD00E7185B /* Info.plist */,
 			);
 			path = PlantDemoUITests;
+			sourceTree = "<group>";
+		};
+		9E416DFF1EA3BF3D00E6B99D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E022B371EA1FBFD00E7185B /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9E416E001EA3BF4600E6B99D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E76D63B1EA20F0C00EF87FD /* BulletBtn.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		9E76D6361EA20B5200EF87FD /* Plane */ = {
